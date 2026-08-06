@@ -14,10 +14,10 @@ npm test
 
 The site is a self-contained Next.js codebase that exports to static HTML. The generated `out/` directory can be hosted on any static provider and attached to any domain the company owns.
 
-Set `NEXT_PUBLIC_SITE_URL` to the final public origin before deploying:
+The initial production deployment uses GitHub Pages:
 
 ```bash
-NEXT_PUBLIC_SITE_URL=https://your-domain.example npm run build
+NEXT_PUBLIC_SITE_URL=https://sanjitrajendiran42.github.io/still-app npm run build
 ```
 
 Product screenshots are checked into `public/app` so this repository can be deployed independently from the iOS repository.

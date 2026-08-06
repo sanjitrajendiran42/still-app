@@ -44,7 +44,7 @@ export default function SupportPage() {
           </section>
           <section>
             <h2>Contact Still</h2>
-            <p>A dedicated support email is being connected before the App Store release. Until then, no recovery or medical information should be sent through public channels. Still is operated by Sanjit Rajendiran, Founder &amp; CEO.</p>
+            <p>For product, billing, accessibility, or privacy support, email <a href="mailto:s85191939@gmail.com"><u>s85191939@gmail.com</u></a>. Please do not email urgent medical information; use the emergency and treatment resources above when immediate help is needed. Still is operated by Sanjit Rajendiran, Founder &amp; CEO.</p>
           </section>
         </article>
       </div>

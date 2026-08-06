@@ -15,7 +15,8 @@ const serif = DM_Serif_Display({
   display: "swap",
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000/still-app";
+const basePath = "/still-app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -29,8 +30,8 @@ export const metadata: Metadata = {
   authors: [{ name: "Still", url: siteUrl }],
   creator: "Sanjit Rajendiran",
   icons: {
-    icon: "/app/icon.png",
-    apple: "/app/icon.png",
+    icon: `${basePath}/app/icon.png`,
+    apple: `${basePath}/app/icon.png`,
   },
   openGraph: {
     type: "website",
@@ -38,13 +39,13 @@ export const metadata: Metadata = {
     siteName: "Still",
     title: "Quit drinking. Keep becoming you.",
     description: "A calm, private system for the next clear decision.",
-    images: [{ url: new URL("/og.png", siteUrl).toString(), width: 1731, height: 909, alt: "Still — Quit drinking. Keep becoming you." }],
+    images: [{ url: `${siteUrl}/og.png`, width: 1731, height: 909, alt: "Still — Quit drinking. Keep becoming you." }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Still — Your clear way forward",
     description: "Quit drinking, beat urges and build your streak on iPhone.",
-    images: [new URL("/og.png", siteUrl).toString()],
+    images: [`${siteUrl}/og.png`],
   },
 };
 

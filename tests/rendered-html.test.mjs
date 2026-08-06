@@ -25,3 +25,7 @@ for (const [path, text] of [
     assert.match(await render(path), new RegExp(text));
   });
 }
+
+test("publishes the support contact", async () => {
+  assert.match(await render("/support"), /s85191939@gmail\.com/);
+});
